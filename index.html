@@ -2558,7 +2558,7 @@ function App(){
         </button>)}
       </div>
       <div style={{padding:"10px 14px",borderTop:"1px solid #1e2d4a",position:"relative",zIndex:1}}>
-        {<div style={{fontSize:10,color:loading?"#22c55e":"#60a5fa",marginBottom:6,textAlign:"center",background:loading?"rgba(34,197,94,0.1)":"rgba(59,130,246,0.1)",padding:"3px 8px",borderRadius:4}}>{loading?"● Live":"⏳ Syncing..."}</div>}
+        {<div style={{fontSize:10,color:loading?"#22c55e":"#60a5fa",marginBottom:6,textAlign:"center",background:loading?"rgba(34,197,94,0.1)":"rgba(59,130,246,0.1)",padding:"3px 8px",borderRadius:4}}>{loading?"⏳ Syncing...":"● Live"}</div>}
         <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
           <div style={{width:30,height:30,borderRadius:"50%",background:user.role==="leader"?"linear-gradient(135deg,#3b82f6,#7c3aed)":"linear-gradient(135deg,#06b6d4,#10b981)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:11,fontWeight:700,color:"#fff",flexShrink:0}}>{user.avatar||(user.name||"?")[0]}</div>
           <div><div style={{color:"#e2e8f0",fontSize:12,fontWeight:600}}>{user.name?.split(" ")[0]}</div><div style={{color:"#4a90b8",fontSize:10,textTransform:"uppercase",letterSpacing:0.5}}>{user.role==="leader"?t.leader:t.runner}</div></div>
